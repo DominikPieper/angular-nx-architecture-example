@@ -14,7 +14,32 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@angular-architecture/check-in/shell": [
+        "libs/check-in/shell/src/index.ts"
+      ],
+      "@angular-architecture/check-in/data-access": [
+        "libs/check-in/data-access/src/index.ts"
+      ],
+      "@angular-architecture/check-in/feature-check-in": [
+        "libs/check-in/feature-check-in/src/index.ts"
+      ],
+      "@angular-architecture/shared/data-access": [
+        "libs/shared/data-access/src/index.ts"
+      ],
+      "@angular-architecture/seatmap/data-access": [
+        "libs/seatmap/data-access/src/index.ts"
+      ],
+      "@angular-architecture/seatmap/feature-seatmap": [
+        "libs/seatmap/feature-seatmap/src/index.ts"
+      ],
+      "@angular-architecture/booking/shell": [
+        "libs/booking/shell/src/index.ts"
+      ],
+      "@angular-architecture/booking/data-access": [
+        "libs/booking/data-access/src/index.ts"
+      ]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

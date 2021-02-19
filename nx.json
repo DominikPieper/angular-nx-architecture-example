@@ -1,6 +1,6 @@
 {
   "npmScope": "angular-architecture",
-  "affected": { "defaultBase": "master" },
+  "affected": { "defaultBase": "main" },
   "implicitDependencies": {
     "workspace.json": "*",
     "package.json": { "dependencies": "*", "devDependencies": "*" },
@@ -16,15 +16,33 @@
     }
   },
   "projects": {
-    "check-in-desktop": { "tags": [] },
+    "check-in-desktop": { "tags": ["scope:app", "scope:check-in"] },
     "check-in-desktop-e2e": {
-      "tags": [],
+      "tags": ["scope:e2e"],
       "implicitDependencies": ["check-in-desktop"]
     },
-    "check-in-mobile": { "tags": [] },
+    "check-in-mobile": { "tags": ["scope:app", "scope:check-in"] },
     "check-in-mobile-e2e": {
-      "tags": [],
+      "tags": ["scope:e2e"],
       "implicitDependencies": ["check-in-mobile"]
-    }
+    },
+    "check-in-shell": { "tags": ["scope:check-in", "type:shell"] },
+    "check-in-data-access": { "tags": ["scope:check-in", "type:data-access"] },
+    "check-in-feature-check-in": { "tags": ["scope:check-in", "type:feature"] },
+    "shared-data-access": { "tags": ["scope:shared", "type:data-access"] },
+    "seatmap-data-access": { "tags": ["scope:seatmap", "type:data-access"] },
+    "seatmap-feature-seatmap": { "tags": ["scope:seatmap", "type:feature"] },
+    "booking-desktop": { "tags": ["scope:app", "scope:booking"] },
+    "booking-desktop-e2e": {
+      "tags": [],
+      "implicitDependencies": ["booking-desktop"]
+    },
+    "booking-mobile": { "tags": ["scope:app", "scope:booking"] },
+    "booking-mobile-e2e": {
+      "tags": [],
+      "implicitDependencies": ["booking-mobile"]
+    },
+    "booking-shell": { "tags": ["scope:booking", "type:shell"] },
+    "booking-data-access": { "tags": ["scope:booking", "type:data-access"] }
   }
 }
